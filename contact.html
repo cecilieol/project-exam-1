@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Green Kitchen - Contact</title>
+    <meta name="description" content="Welcome to the green kitchen! Contact us here." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/styles.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <header>
+        <section class="header-top">
+            <a href="index.html"><img class="logo" src="visuals/TGK-LOGO.png" alt="The Green Kitchen logo"></a>
+        </section>
+        <label for="hamburger">
+            <div id="hamburger-icon">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </label>
+          <input type="checkbox" id="hamburger">
+        <nav>
+            <ul>
+                <li><a href="allrecipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html"><b>Contact</b></a></li>
+                <div class="search-bar-mobile">
+                    <input type="text" placeholder="Search..">
+                    <img src="visuals/loupe.png" alt="Search icon">
+                </div>
+            </ul>
+        </nav>
+
+        <div class="contact-modal">
+            <div class="success-message">
+                <h4>Your form has been submitted!</h4>
+                <div class="contact-modal-buttons">
+                    <button class="return">Return to home page</button>
+                    <button class="contact-new">Submit a new inquiry</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <button class="return-button">Back</button>
+        
+        <H1>Contact</H1>
+
+        <p class="contact-intro">We are constantly looking to improve our content and site. 
+            If you have any questions, tips or something you want to share, please do not hesitate to send us an inquiry.</p>
+
+        <div class="form">
+              <form action="submit.php" method="POST">
+                <p>Full name</p>
+                <input type="text" id="fullname" name="fullname" />
+                <div class="form-error" id="name-error">Please enter your full name (more than 5 characters)</div>
+                <p>E-mail address</p>
+                <input type="text" id="email" name="email" />
+                <div class="form-error" id="email-error">Please enter a valid e-mail address</div>
+                <p>Subject</p>
+                <input type="text" id="subject" name="subject" />
+                <div class="form-error" id="subject-error">Please enter a subject (more than 15 characters)</div>
+                <p>Your message</p>
+                <textarea id="message" name="message"></textarea>
+                <div class="form-error" id="message-error">Please write a message (more than 25 characters)</div>
+                <br />
+                <button class ="submit-button">Submit</button>
+              </form>
+          </div>
+
+    </main>
+    <footer>
+        <div class="footer-row">
+        <div class="footer-column">
+            <h3>Follow us on social media</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="visuals/facebook.png" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="visuals/instagram.png" alt="Instagram icon"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="visuals/youtube.png" alt="Youtube icon"></a>
+                <a href="https://www.snapchat.com" target="_blank"><img src="visuals/snapchat.png" alt="Snapchat icon"></a>
+                <a href="https://www.tiktok.com" target="_blank"><img src="visuals/tik-tok.png" alt="TikTok icon"></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Browse more</h3>
+            <div class="browse-list">
+                <a href="allrecipes.html">All Recipes</a>
+                <a href="about.html">About The Green Kitchen</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Latest posts</h3>
+            <div class="latest-list"></div>
+        </div>
+    </div>
+        <div class="footer-bottom">
+            <p>© Cecilie Olsen, Project Exam spring 2021</p>
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

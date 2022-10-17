@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Green Kitchen</title>
+    <meta name="description" content="Welcome to the green kitchen! Find the recipe for your next meat free meal today." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/styles.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <header>
+        <section class="header-top">
+            <a href="index.html"><img class="logo" src="visuals/TGK-LOGO.png" alt="The Green Kitchen logo"></a>
+        </section>
+        <label for="hamburger">
+            <div id="hamburger-icon">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </label>
+          <input type="checkbox" id="hamburger">
+        <nav>
+            <ul>
+                <li><a href="allrecipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="search-bar-mobile">
+                    <input type="text" placeholder="Search..">
+                    <img src="visuals/loupe.png" alt="Search icon">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="index-intro">
+            <h1>Welcome to The Green Kitchen</h1>
+            <p>We know that planning meals isn't easy. That's why we are here to help. 
+                We want to remove all stress related to creating healthy, green and delicious meals, 
+                and leave you with motivation, joy and a full stomach. Join us on a green advendure!</p>
+        </section>
+
+        <section class="latest-container">
+            <h2>Latest Recipes</h2>
+            <div class="latest-slides">
+                <div class="loading latest">
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                </div>
+            </div>
+            <div class="arrow-container"></div>
+            <div class="dot-container"></div>
+        </section>
+
+        <h2 class="featured-headline">Featured: Quick Recipes</h2>
+        <section class="quick-recipes">
+            <div class="loading quick">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+            </div>
+        </section>
+
+        <h2 class="featured-headline">Featured: Weekend Recipes</h2>
+        <section class="weekend-recipes">
+            <div class="loading weekend">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-row">
+        <div class="footer-column">
+            <h3>Follow us on social media</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="visuals/facebook.png" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="visuals/instagram.png" alt="Instagram icon"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="visuals/youtube.png" alt="Youtube icon"></a>
+                <a href="https://www.snapchat.com" target="_blank"><img src="visuals/snapchat.png" alt="Snapchat icon"></a>
+                <a href="https://www.tiktok.com" target="_blank"><img src="visuals/tik-tok.png" alt="TikTok icon"></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Browse more</h3>
+            <div class="browse-list">
+                <a href="allrecipes.html">All Recipes</a>
+                <a href="about.html">About The Green Kitchen</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Latest posts</h3>
+            <div class="latest-list"></div>
+        </div>
+    </div>
+        <div class="footer-bottom">
+            <p>© Cecilie Olsen, Project Exam spring 2021</p>
+        </div>
+    </footer>
+    <script src="js/displayError.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
